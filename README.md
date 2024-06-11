@@ -24,10 +24,14 @@ Live Site
 
 
 ## Testing
+The application includes basic testing using assertions within the JavaScript code. To run the tests:
 
+Open the `index.html` file in a web browser.
+Open the browser's developer console (usually by pressing F12).
+The console will display "All tests passed!" if all assertions are correct. If any test fails, an error message will be shown.
 
-
-The live site is hosted on GitHub Pages. You can access it here []
+## Live Site
+The live site is hosted on GitHub Pages. You can access it here [https://chastyne.github.io/roman-numerals/]
 
 ## Contact Information
 For inquiries, please contact:
