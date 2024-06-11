@@ -44,5 +44,27 @@ function romanConverter() {
     } else {
       resultDiv.innerText = 'Please enter a number between 1 and 3999';
     }
-  }();
+  }
+
+  // Unit tests
+  (function runTests() {
+    const assert = (condition, message) => {
+      if (!condition) {
+        throw new Error(message || "Assertion failed");
+      }
+    };
+  
+    assert(converter(1994) === "MCMXCIV", "Test failed for 1994");
+    assert(converter(58) === "LVIII", "Test failed for 58");
+    assert(converter(3999) === "MMMCMXCIX", "Test failed for 3999");
+    assert(converter(1) === "I", "Test failed for 1");
+    assert(converter(4) === "IV", "Test failed for 4");
+    assert(converter(9) === "IX", "Test failed for 9");
+    assert(converter(40) === "XL", "Test failed for 40");
+    assert(converter(90) === "XC", "Test failed for 90");
+    assert(converter(400) === "CD", "Test failed for 400");
+    assert(converter(1000) === "M", "Test failed for 1000");
+  
+    console.log("All tests passed!");
+  })();
   
